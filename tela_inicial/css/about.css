@@ -1,0 +1,127 @@
+.about {
+    margin-bottom: 88px;
+}
+
+.about .grid_treeColumns .text_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 312px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.about .grid_treeColumns .images_content {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 144px 144px;
+    grid-template-rows: 254px 182px;
+    grid-template-areas:
+        "image_bag image_passport"
+        "image_people image_people";
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.about .decorative_img {
+    background-size: cover;
+}
+
+.image_forest {
+    background-image: url(../img/teste_about_mob.png);
+    grid-area: image_bag;
+}
+
+.image_flower {
+    background-image: url(../img/teste_about_mob2.png);
+    grid-area: image_passport;
+}
+
+.image_oil {
+    background-image: url(../img/alecrim_tablet_desk.png);
+    grid-area: image_people;
+    background-position: 50% 62%;
+}
+
+.about h3 {
+    width: 312px;
+    margin: 88px auto 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        margin-bottom: 104px;
+    }
+
+    .about h3 {
+        width: 600px;
+    }
+
+    .about .grid_treeColumns .text_content {
+        width: 648px;
+    }
+
+    .about .grid_treeColumns .images_content {
+        grid-template-columns: 312px 312px;
+        justify-content: center;
+        margin: 24px auto 0px;
+    }
+
+    .image_forest {
+        background-image: url(../img/forest_tablet_desk.png);
+    }
+
+    .image_flower {
+        background-image: url(../img/flowers_tablet_desk.png);
+        background-position: 50% 10%;
+        background-size: 130%;
+    }
+
+    .image_oil {
+        background-position-y: 20%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about .decorative_img {
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .image_forest {
+
+        grid-area: image_bag;
+    }
+
+    .image_flower {
+
+        grid-area: image_passport;
+    }
+
+    .image_oil {
+        grid-area: image_people;
+    }
+
+
+
+    .about .grid_treeColumns {
+        width: 924px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+    }
+
+    .about .grid_treeColumns .text_content {
+        width: auto;
+    }
+
+    .about .grid_treeColumns .images_content {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .about .title_fixed hr {
+        margin-bottom: 64px;
+    }
+}

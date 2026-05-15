@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alice";
+  src: url(../fonts/Alice-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #7d734a;
+  --secondary-color: #b81515;
+
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #3f3407;
+
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
+
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
+}
+
+/* CSS RESET */
+
+
+body,
+img,
+h1,
+h2,
+h4,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Montserrat";
+  color: #222222;
+}
+
+/*AQUI ESTOU DIMINUINDO A QUANTIDADE DE CÓDIGO COLOCANDO OS ESTILOS GERAIS NO CSS GLOBAL*/
+.section_limited {
+  width: 312px;
+  margin: 0px auto 88px;
+}
+
+section.hero {
+  width: 100%;
+  margin: 0px;
+}
+
+section.main_footer {
+  width: 100%;
+  margin: 0px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: var(--text-weight);
+}
+
+h4 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .section_limited {
+    width: 648px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section_limited {
+    width: 924px;
+    margin-bottom: 104px;
+  }
+
+}
+
+.title_fixed {
+  justify-items: center;
+  margin-bottom: 32px;
+}
+
+.title_fixed h2 {
+  font-size: 28px;
+  /* CENTRALIZA NA HORIZONTAL */
+  font-weight: var(--title-weight);
+}
+
+.title_fixed hr {
+  border: none;
+  /* remove a linha padrão */
+  height: 4px;
+  /* sua espessura */
+  width: 180px;
+  /* sua largura */
+  background: #7d734a;
+  /* cor da barra */
+  /* mantém em linha separada */
+}
+
+@media screen and (min-width: 768px) {
+  .title_fixed h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title_fixed {
+    margin-bottom: 64px;
+  }
+}

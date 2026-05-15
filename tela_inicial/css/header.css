@@ -1,0 +1,134 @@
+header {
+  position: relative;
+  height: 93px;
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 48px;
+}
+
+.logo img {
+  display: inline-block;
+  object-fit: cover;
+  width: 90px;
+}
+
+.navigation-menu nav {
+  display: none;
+}
+
+/*por padrão no mobile não esta ativo*/
+/*padrão no mobile quando esta ativo. esse padrão continuara para o tablet quando ativo: position: absolute */
+input[type="checkbox"]:checked~nav {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
+}
+
+.links-header {
+  list-style: none;
+}
+
+.links-header li {
+  margin: 16px 0px;
+}
+
+.links-header li a {
+  /*font-family: "Montserrat";*/
+  text-decoration: none;
+  color: var(--background-primary-color);
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 780px) {
+  .navigation-menu {
+    width: 400px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu nav {
+    display: block;
+    /*position: static;*/
+  }
+
+  input[type="checkbox"]:checked~nav {
+    position: static;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .links-header {
+    display: flex;
+    /* Adicionado para alinhar os links horizontalmente */
+  }
+
+  .links-header li a {
+    font-size: 20px;
+  }
+}
+
+.full-logo {
+  position: relative;
+}
+
+.full-logo span {
+  font-family: "Alice";
+  color: var(--background-primary-color);
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 24px;
+  top: 33px;
+  left: -23px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 37px 120px;
+  }
+
+  .navigation-menu {
+    width: 467px;
+  }
+
+  .full-logo {
+    height: 100%;
+    display: flex;
+  }
+
+  .full-logo img {
+    object-fit: cover;
+    width: 60px;
+    height: 95%;
+  }
+
+  .full-logo span {
+    position: static;
+    transform: none;
+    font-size: 45px;
+    letter-spacing: 2px;
+    align-self: center;
+  }
+
+  .links-header li a {
+    font-size: 24px;
+  }
+
+  .navigation-menu a:hover {
+    color: #94caaa;
+  }
+}

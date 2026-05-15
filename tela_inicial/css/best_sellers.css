@@ -1,0 +1,129 @@
+.best_sellers .box_items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /*margin-bottom: 88px;*/
+}
+
+.best_sellers .box_items .product_item header {
+    display: initial;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.lumina_img {
+    background-image: url(../img/oleo.png);
+    width: 312px;
+    height: 360px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0px auto;
+}
+
+.brisa_img {
+    background-image: url(../img/creme.png);
+    width: 312px;
+    height: 360px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0px auto;
+}
+
+.best_sellers .box_items .product_item a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--background-primary-color);
+    border-radius: 8px;
+    padding: 16px 90px;
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    width: 312px;
+    margin: 0px auto;
+}
+
+.best_sellers .description {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    margin: 24px auto;
+    gap: 24px;
+}
+
+.best_sellers .description h4 {
+    font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .lumina_img {
+        background-image: url(../img/oleo_final.png);
+        width: 648px;
+        height: 452px;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin: 0px auto;
+    }
+
+    .brisa_img {
+
+        width: 648px;
+        height: 452px;
+        margin: 0px auto;
+    }
+
+    .best_sellers .description {
+        display: flex;
+        flex-direction: column;
+        width: 648px;
+        margin: 24px auto;
+        gap: 24px;
+    }
+
+    .best_sellers .box_items .product_item a {
+        width: 280px;
+        padding: 16px 74px;
+        margin: 0px;
+    }
+
+    .best_sellers .box_items .product_item footer {
+        width: 648px;
+        justify-self: center;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .best_sellers .title_fixed hr {
+        margin: 16px auto 64px;
+    }
+
+    .best_sellers .box_items {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .best_sellers .box_items .product_item {
+        width: 450px;
+    }
+
+    .lumina_img {
+        width: 450px;
+    }
+
+    .brisa_img {
+        width: 450px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .best_sellers .description {
+        width: 450px;
+    }
+
+    .best_sellers .box_items .product_item footer {
+        width: 450px;
+    }
+}

@@ -1,0 +1,111 @@
+.care .cards-care {
+    display: flex;
+    flex-direction: column;
+    /*width: 312px;*/
+    /*margin: 0px auto 88px;*/
+    align-items: center;
+    gap: 24px;
+}
+
+.care .cards-care .card {
+    display: flex;
+    width: 100%;
+    height: 288px;
+    border-radius: 16px;
+    align-items: end;
+    justify-content: center;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.care .cards-care .card_1 {
+    background: url(../img/corpo.jpeg);
+    background-size: cover;
+    background-position: 50% 85%;
+    /*imagem centralizada no container*/
+}
+
+.care .cards-care .card_2 {
+    background: url(../img/cabelos.jpeg);
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.care .cards-care .card_3 {
+    background: url(../img/aromas.jpeg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 50% 90%;
+}
+
+.care .cards-care .card_4 {
+    background: url(../img/skincare.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -20px;
+}
+
+.care .cards-care .card a {
+    padding: 16px 64px;
+    background-color: var(--primary-color);
+    border-radius: 32px;
+    text-decoration: none;
+    color: var(--background-primary-color);
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    margin-bottom: 24px;
+}
+
+.care .cards-care .card a:hover {
+    background-color: #495b21;
+}
+
+
+@media screen and (min-width: 768px) {
+    .care .cards-care {
+        display: grid;
+        /*width: 648px;*/
+        grid-template-columns: 312px 312px;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .care .cards-care .card {
+        box-sizing: border-box;
+    }
+
+    .care .cards-care .card_3 {
+        background-position: 50% 75%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .care .cards-care {
+        width: 100%;
+        margin: 64px auto 0px;
+        grid-template-columns: 450px 450px;
+    }
+
+    /*.cards-care .card {
+        width: 450px;
+        height: 280px;
+    } apenas isso dava errado pela condição do tamanho do grid criado no breakpoint anterior de 768px*/
+    .care .cards-care .card a {
+        padding: 16px 74px;
+        font-size: 23px;
+    }
+
+    .care .cards-care .card_3 {
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .care .cards-care .card_4 {
+        background-position-y: 12%;
+    }
+}
